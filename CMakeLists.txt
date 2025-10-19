@@ -5,4 +5,5 @@ set(CMAKE_C_STANDARD 11)
 
 add_library(DSA STATIC
         primer.c
-        array.c)
+        array.c
+        linked_list.c)
