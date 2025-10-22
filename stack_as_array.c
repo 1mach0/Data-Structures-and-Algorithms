@@ -46,10 +46,10 @@ void peek(Stack given) {
 
 void printStack(Stack given) {
     printf("Printing from last to first\n");
-    while (given.popPtr != -1) {
+    while (given.popPtr != 0) {
         printf("[%d] -> ", given.array[given.popPtr--]);
     }
-    printf("\n");
+    printf("[%d]\n", given.array[given.popPtr]);
 }
 
 int main() {
