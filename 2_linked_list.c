@@ -11,7 +11,7 @@ typedef struct Node {
     struct Node* next;
 } Node;
 
-Node* insert_last(Node* head, int data) {
+Node* insert_last(Node* head, const int data) {
     Node* newNode = malloc(sizeof(Node));
     newNode->data = data;
     newNode->next = NULL;
@@ -29,7 +29,7 @@ Node* insert_last(Node* head, int data) {
     return head;
 }
 
-Node* insert_first(Node* head, int data) {
+Node* insert_first(Node* head, const int data) {
     Node* newNode = malloc(sizeof(Node));
     newNode->data = data;
     if (head == NULL) {
@@ -44,7 +44,7 @@ Node* insert_first(Node* head, int data) {
     return head;
 }
 
-Node* search(Node* head, int data) {
+Node* search(Node* head, const int data) {
     Node* current = head;
     if (current == NULL) {
         return NULL;
@@ -58,7 +58,7 @@ Node* search(Node* head, int data) {
     return (current->data == data)? current : NULL;
 }
 
-Node* delete_data(Node* head, int data) {
+Node* delete_data(Node* head, const int data) {
     Node* found = search(head, data);
     if (found == NULL) {
         return head;
