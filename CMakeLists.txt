@@ -9,4 +9,5 @@ add_library(DSA STATIC
         linked_list.c
         stack_as_array.c
         stack_as_linked_list.c
-        expression_parsing.c)
+        expression_parsing.c
+        queue.c)
