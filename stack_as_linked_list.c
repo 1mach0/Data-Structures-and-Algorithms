@@ -74,7 +74,7 @@ void peek(const Stack given) {
 }
 
 void printStack(const Stack given) {
-    Node* temp = given.headPtr;
+    const Node* temp = given.headPtr;
     while (temp->next != NULL) {
         printf("[%d] -> ", temp->data);
         temp = temp->next;
