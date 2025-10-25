@@ -13,4 +13,7 @@ add_library(DSA STATIC
         6_queue.c
         7_binary_search.c
         9_hash_table.c
-        8_sort.c)
+        8_sort.c
+        10_bst.c
+        11_avl.c
+        12_btree.c)
